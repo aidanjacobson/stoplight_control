@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BLE Controller</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="connectScreen">
+        <div id="connectBtn">
+            <h1>Connect</h1>
+        </div>
+    </div>
+
+    <div id="controlScreen" style="display:none;">
+        <div class="button-container">
+            <button onclick="setMode(2)" class="red">Red</button>
+            <button onclick="setMode(1)" class="yellow">Yellow</button>
+            <button onclick="setMode(0)" class="green">Green</button>
+            <button onclick="setMode(3)" class="white">All On</button>
+            <button onclick="setMode(4)" class="cyan">Cycle</button>
+            <button onclick="setMode(5)" class="magenta">Blink</button>
+            <button onclick="setMode(6)" class="gray">Off</button>
+            <button onclick="setMode(7)" class="red">Flashing Red</button>
+        </div>
+    </div>
+</body>
+</html>

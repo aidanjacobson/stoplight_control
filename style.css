@@ -1,0 +1,99 @@
+body {
+    background-color: #0d0d0d;
+    color: white;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#connectScreen, #controlScreen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- Connect screen ---------- */
+#connectBtn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#connectBtn h1 {
+    color: white;
+    font-size: 3rem;
+    background: #1e1e1e;
+    border: 2px solid #555;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+#connectBtn:hover h1 {
+    background: #333;
+    border-color: #888;
+}
+
+/* ---------- Button container ---------- */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;  /* distributes rows vertically */
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;           /* full-screen height */
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Each button takes up 1/3 of row width */
+.button-container button {
+    flex: 0 1 calc(33.333% - 1rem);
+    height: calc(15% - 1rem);  /* make rows fill the screen evenly */
+    font-size: 5rem;
+    color: white;
+    background: #1e1e1e;
+    border: 2px solid #555;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button-container button:hover {
+    background: #333;
+    border-color: #888;
+}
+
+/* ---------- Color accents ---------- */
+.red { background-color: #b71c1c !important; }
+.red:hover { background-color: #d32f2f !important; }
+
+.yellow { background-color: #fbc02d !important; color: black !important; }
+.yellow:hover { background-color: #fdd835 !important; }
+
+.green { background-color: #2e7d32 !important; }
+.green:hover { background-color: #43a047 !important; }
+
+.white { background-color: #e0e0e0 !important; color: black !important; }
+.white:hover { background-color: #ffffff !important; }
+
+.cyan { background-color: #0097a7 !important; }
+.cyan:hover { background-color: #00acc1 !important; }
+
+.magenta { background-color: #8e24aa !important; }
+.magenta:hover { background-color: #ab47bc !important; }
+
+.gray { background-color: #424242 !important; }
+.gray:hover { background-color: #616161 !important; }
